@@ -228,10 +228,11 @@ body {
   color: #aaaaaa;
 }
 .place__link {
-  color: white;
+  color: #ffffff;
   font-size: 18px;
-  line-height: 1.22;
-  text-decoration-line: underline;
+  line-height: 22px;
+  text-decoration-line: none;
+  border-bottom: solid 1px #ffffff;
 }
 
 .place__link:hover {
