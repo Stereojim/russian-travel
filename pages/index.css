@@ -31,9 +31,10 @@ body {
   margin: 0;
   padding: 0;
   color: #ffffff;
+  background-color: #2a2c2f;
 }
 .page {
-  width: 1280px;
+  max-width: 1280px;
   font-family: "Inter", "Arial", sans-serif;
   background-color: #2a2c2f;
   margin: 0 auto;
@@ -80,13 +81,14 @@ body {
 }
 
 .content {
-  max-width: 1184px;
+  width: 92.5%;
   margin: auto;
 }
 .lead {
-  max-width: 984px;
+  width: 76.875%;
   padding-top: 56px;
   margin: auto;
+  border: solid 1px blue;
 }
 
 .lead__title {
@@ -131,10 +133,11 @@ body {
 }
 
 .intro {
-  max-width: 984px;
+  width: 76.875%;
   margin: auto;
   display: flex;
   flex-direction: column;
+  border: green solid 1px;
 }
 
 .intro__title {
@@ -185,10 +188,15 @@ body {
 }
 
 .places {
-  padding-left: 148px;
+display: flex;
+flex-direction: column;
+margin: auto; 
+width: 76.875%;
+border: 1px solid red;  
 }
 
 .place {
+  max-width: 83.1%;
   margin-top: 92px;
   display: grid;
   grid-template-columns: 460px 484px;
@@ -343,4 +351,48 @@ body {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    max-width: 1184px;
+    background-color: blue;
+  }
+  .footer {
+    max-width: 1184px;
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .page {
+    background-color: red;
+  }
+
+@media screen and (max-width: 1024px) {
+  .page {
+    background-color: orange;
+  }
+  .photo-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .page {
+    background-color: yellow;
+  }
+}
+@media screen and (max-width: 425px) {
+  .photo-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+  .page {
+    background-color: yellowgreen;
+  }
 }
