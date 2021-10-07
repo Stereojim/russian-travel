@@ -81,11 +81,12 @@ body {
 }
 
 .content {
-  width: 92.5%;
+  max-width: 1184px;
+  width: 100%;
   margin: auto;
 }
 .lead {
-  width: 76.875%;
+  max-width: 83.1%;
   padding-top: 56px;
   margin: auto;
   border: solid 1px blue;
@@ -108,14 +109,14 @@ body {
   font-weight: 400;
   font-size: 30px;
   line-height: 36px;
-  max-width: 50%;
+  width: 640px;
   text-align: center;
 }
 
 .lead__image {
   max-width: 100%;
   object-fit: cover;
-  padding-top: 64px;
+  padding-top: 5%;
   display: flex;
   align-items: center;
 }
@@ -133,7 +134,7 @@ body {
 }
 
 .intro {
-  width: 76.875%;
+  width: 83.1%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -188,43 +189,53 @@ body {
 }
 
 .places {
+max-width: 83.1%;
+margin: auto;
+border: 1px solid red; 
 display: flex;
-flex-direction: column;
-margin: auto; 
-width: 76.875%;
-border: 1px solid red;  
+flex-wrap: wrap;
 }
 
 .place {
-  max-width: 83.1%;
   margin-top: 92px;
   display: grid;
-  grid-template-columns: 460px 484px;
-  grid-template-rows: repeat (2, minmax(min-content, max-content));
+  grid-template-columns: minmax(440px, 460px) minmax(456px, 484px); 
+  
   row-gap: 48px;
   column-gap: 40px;
   align-items: end;
+  border: 1px solid magenta;
+  
+
 }
+  
+
 .place__title {
   grid-column: 1/2;
+  grid-row: 1/2;
   margin: 0;
   font-size: 72px;
   line-height: 76px;
   font-weight: 900;
+  border: springgreen 1px solid;
 }
 
 .place__image {
+  max-width: 460px;
   grid-column: 1/2;
-  grid-row: 2/3;
   max-width: 100%;
   max-height: 100%;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border: springgreen 1px solid;
+  
 }
 .place__website {
   grid-column: 2/3;
   grid-row: 1/2;
+  border: springgreen 1px solid;
+  max-width: 484px;
 }
 
 .place__url-heading {
@@ -234,6 +245,7 @@ border: 1px solid red;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #aaaaaa;
+  border: springgreen 1px solid;
 }
 .place__link {
   color: #ffffff;
@@ -241,6 +253,7 @@ border: 1px solid red;
   line-height: 22px;
   text-decoration-line: none;
   border-bottom: solid 1px #ffffff;
+  border: springgreen 1px solid;
 }
 
 .place__link:hover {
@@ -248,6 +261,7 @@ border: 1px solid red;
 }
 
 .place__paragraph {
+  max-width: 484px;
   margin: 0;
   grid-column: 2/3;
   grid-row: 2/3;
@@ -255,6 +269,9 @@ border: 1px solid red;
   line-height: 163%;
   font-weight: normal;
   align-self: flex-start;
+  border: solid 1px red;
+  border: springgreen 1px solid;
+  justify-self: end;
 }
 
 .place__paragraph_break {
@@ -354,6 +371,7 @@ border: 1px solid red;
 }
 
 @media screen and (min-width: 1280px) {
+
   .header {
     max-width: 1184px;
     background-color: blue;
@@ -362,14 +380,50 @@ border: 1px solid red;
     max-width: 1184px;
     background-color: blue;
   }
-}
-
-@media screen and (max-width: 1280px) {
-  .page {
-    background-color: red;
+.page {
+    background-color: burlywood;
   }
 
-@media screen and (max-width: 1024px) {
+  .photo-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+.intro {
+     width: 90.625%;
+  }
+.lead {
+  max-width: 90.625%;
+
+}
+.places {
+  width: 90.625%;
+  align-items: center;
+}
+.place {
+  column-gap: 32px;
+  width: 100%;
+  grid-template-columns: 440px 456px;
+  
+}
+  .place__image {
+    max-width: 440px;
+  }
+    .place__paragraph {
+      max-width: 456px;
+  
+    }
+  
+.photo-grid {
+  width: 90.625%;
+  margin: auto;
+  padding-top: 92px;
+
+}
+}
+
+
+
+@media screen and (min-width: 1024px) {
   .page {
     background-color: orange;
   }
@@ -377,8 +431,41 @@ border: 1px solid red;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
+  .lead {
+    max-width: 100%;
+  
+  }
+  .lead__caption {
+    max-width: 93.75%;
+    margin: auto;
+  }
+
+  .intro {
+    width: 93.75%;
+ }
+ .intro__title {
+  padding-top: 88px;
 }
-@media screen and (max-width: 768px) {
+.places {
+  max-width: 93.75%;
+  align-items: center;
+}
+.place {
+  column-gap: 32px;
+  width: 100%;
+  grid-template-columns: 440px 456px;
+  
+}
+  .place__image {
+    max-width: 440px;
+  }
+    .place__paragraph {
+      max-width: 456px;
+  
+    }
+}
+
+@media screen and (min-width: 768px) {
   .photo-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -387,7 +474,8 @@ border: 1px solid red;
     background-color: yellow;
   }
 }
-@media screen and (max-width: 425px) {
+
+@media screen and (min-width: 320px) {
   .photo-grid {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(12, 1fr);
