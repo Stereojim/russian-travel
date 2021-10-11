@@ -41,8 +41,10 @@ __And all CSS styles are also imported, using BEM methdology__
 
 Design was made on Figma
 
-* [Ссылка на макет в Figma](https://www.figma.com/file/5S2WSbEFL6awjVWJ0NWL8Q/Sprint-3_-Russia-_-desktop-mobile?node-id=28503%3A0)
+* [pages on Figma](https://www.figma.com/file/5S2WSbEFL6awjVWJ0NWL8Q/Sprint-3_-Russia-_-desktop-mobile?node-id=28503%3A0)
 
 3. You can use this project to inspect how you can make your page flexible. Using grids and flex-boxes makes them accurate and nice.
 
 4. I still hope, that i will complete this task and someday i will recieve some JavaScript knowledges from my sweatheart teachers
+
+* [My site link](https://stereojim.github.io/russian-travel/)
