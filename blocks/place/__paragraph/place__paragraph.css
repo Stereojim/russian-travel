@@ -23,12 +23,3 @@
   }
 }
 
-.place__paragraph_break {
-  margin-bottom: 20px;
-}
-
-.place__paragraph_break:after {
-  content: "";
-  display: flex;
-  margin-bottom: 20px;
-}

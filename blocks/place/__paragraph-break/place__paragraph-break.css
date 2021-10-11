@@ -1,0 +1,9 @@
+.place__paragraph-break {
+  margin-bottom: 20px;
+}
+
+.place__paragraph-break:after {
+  content: "";
+  display: flex;
+  margin-bottom: 20px;
+}
