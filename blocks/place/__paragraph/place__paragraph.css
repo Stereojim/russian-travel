@@ -1,0 +1,34 @@
+.place__paragraph {
+  max-width: 484px;
+  margin: 0;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-size: 18px;
+  line-height: 163%;
+  font-weight: normal;
+  align-self: flex-start;
+  justify-self: end;
+}
+
+@media screen and (max-width: 768px) {
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 26.08px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .place__paragraph {
+    padding-top: 32px;
+  }
+}
+
+.place__paragraph_break {
+  margin-bottom: 20px;
+}
+
+.place__paragraph_break:after {
+  content: "";
+  display: flex;
+  margin-bottom: 20px;
+}

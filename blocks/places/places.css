@@ -1,0 +1,28 @@
+
+.places {
+  padding-top: 92px;
+  max-width: 984px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .places {
+    padding-left: 3.125vw;
+    padding-right: 3.125vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .places {
+    padding-top: 88px;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .places {
+    padding-top: 64px;
+  }
+}
