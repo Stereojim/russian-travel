@@ -6,6 +6,7 @@
 
 @media screen and (max-width: 425px) {
   .footer__copyright {
+    width: 100%;
     padding-top: 48px;
   }
 }
