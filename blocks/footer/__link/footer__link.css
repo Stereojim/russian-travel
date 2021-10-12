@@ -4,7 +4,7 @@
   margin-right: 18px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .footer__link {
     color: #ffffff;
     min-width: 100%;

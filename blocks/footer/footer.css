@@ -1,7 +1,6 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  max-width: 1184px;
   margin: 0 auto;
   padding-top: 92px;
   padding-bottom: 24px;
@@ -27,7 +26,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .footer {
     padding-top: 32px;
     flex-wrap: wrap;
