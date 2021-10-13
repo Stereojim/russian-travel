@@ -1,18 +1,11 @@
 .cover__title-link {
-  position: absolute;
   color: #ffffff;
   text-decoration: none;
   background-color: rgba(42, 44, 47, 0.3);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-items: center;
-  z-index: 3;
-  width: 100%;
-  height: 100%;
   justify-content: center;
+  width: 100%;
 }
 
-.cover__title-link:hover {
-  background-color: rgba(42, 44, 47, 0.8);
-}
