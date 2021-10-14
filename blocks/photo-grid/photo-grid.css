@@ -1,17 +1,16 @@
 .photo-grid {
   margin: 0 auto;
   display: grid;
-  margin-left: 48px;
-  margin-right: 48px;
-  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+  max-width: 92.5vw;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 16px;
   margin-top: 92px;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 1024px) {
   .photo-grid {
-    margin: auto;
-    margin-top: 92px;
+    max-width: 100%;
     padding-left: 4.6875vw;
     padding-right: 4.6875vw;
     gap: 14px;
@@ -22,8 +21,6 @@
   .photo-grid {
     padding-left: 3.125vw;
     padding-right: 3.125vw;
-    margin-top: 92px;
-
   }
 }
 
@@ -31,7 +28,5 @@
   .photo-grid {
     padding-left: 5vw;
     padding-right: 5vw;
-    margin-top: 92px;
-
   }
 }

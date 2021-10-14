@@ -7,13 +7,6 @@
   opacity: 0.8;
 }
 
-.header__lang-link:first-of-type {
-  border-bottom: 2px solid;
-  margin-right: 18px;
-}
-
-@media screen and (max-width: 320px) {
-  .header__lang-link:first-of-type {
-    padding-bottom: 1px;
-  }
+.header__lang-link:active {
+  border-bottom: 1px solid;
 }

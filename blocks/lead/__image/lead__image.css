@@ -9,18 +9,18 @@
 
 @media screen and (max-width: 1024px) {
   .lead__image {
- padding-top: 56px;
+    padding-top: 56px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .lead__image {
     padding-top: 7.29vw;
-     }
+  }
 }
 
 @media screen and (max-width: 320px) {
   .lead__image {
     padding-top: 12.5vw;
-     }
+  }
 }

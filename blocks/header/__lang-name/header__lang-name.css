@@ -1,0 +1,9 @@
+.header__lang-name {
+  padding: 0;
+  margin: 0;
+  margin-right: 18px;
+}
+
+.header__lang-name:last-of-type {
+  margin-right: 0;
+}

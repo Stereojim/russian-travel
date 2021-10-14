@@ -1,5 +1,5 @@
 .place {
-margin-bottom: 80px;
+  margin-bottom: 80px;
   display: grid;
   grid-template-columns: 460px 484px;
   row-gap: 48px;
@@ -32,11 +32,11 @@ margin-bottom: 80px;
 
 @media screen and (max-width: 700px) {
   .place {
-max-width: 100%;
-display: inline;
-flex-wrap: wrap;
-margin: 0;
-justify-content: left;
-margin-bottom: 50px;
+    max-width: 100%;
+    display: inline;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: left;
+    margin-bottom: 50px;
   }
 }

@@ -9,13 +9,10 @@
   color: white;
 }
 
-
 @media screen and (max-width: 768px) {
   .cover__title {
     max-width: 72.9vw;
-    margin: 0;
     font-size: 9.375vw;
-    font-weight: 900;
     line-height: 9.89vw;
   }
 }
@@ -23,7 +20,6 @@
   .cover__title {
     max-width: 240px;
     font-size: 32px;
-    font-weight: 900;
     line-height: 35px;
     margin-top: 33px;
   }

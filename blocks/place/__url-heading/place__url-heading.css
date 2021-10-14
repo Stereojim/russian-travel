@@ -5,4 +5,14 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #aaaaaa;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+@media screen and (max-width: 700px) {
+  .place__url-heading {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 32px;
+  }
 }

@@ -1,20 +1,15 @@
 .footer__link {
   color: #ffffff;
   text-decoration: none;
-  margin-right: 18px;
+  padding-right: 18px;
+  border: 1px red so;
 }
 
 @media screen and (max-width: 425px) {
   .footer__link {
-    color: #ffffff;
     min-width: 100%;
-    text-decoration: none;
     padding-top: 32px;
   }
-}
-
-.footer__link:last-child {
-  margin: 0;
 }
 
 .footer__link:hover {

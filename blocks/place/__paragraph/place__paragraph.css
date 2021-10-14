@@ -3,11 +3,10 @@
   margin: 0;
   grid-column: 2/3;
   grid-row: 2/3;
-  font-size: 18px;
-  line-height: 163%;
-  font-weight: normal;
   align-self: flex-start;
   justify-self: end;
+  list-style: none;
+  padding: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -20,6 +19,7 @@
 @media screen and (max-width: 700px) {
   .place__paragraph {
     padding-top: 32px;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
 }
-
