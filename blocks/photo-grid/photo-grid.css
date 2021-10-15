@@ -21,6 +21,7 @@
   .photo-grid {
     padding-left: 3.125vw;
     padding-right: 3.125vw;
+    margin-top: 88px;
   }
 }
 
@@ -28,5 +29,6 @@
   .photo-grid {
     padding-left: 5vw;
     padding-right: 5vw;
+    margin-top: 64px;
   }
 }

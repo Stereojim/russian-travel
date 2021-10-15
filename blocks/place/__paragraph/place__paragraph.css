@@ -8,6 +8,7 @@
   list-style: none;
   padding: 0;
 }
+/* обнуление отступов осталось от списка. надо ли убирать.. */
 
 @media screen and (max-width: 768px) {
   .place__paragraph {

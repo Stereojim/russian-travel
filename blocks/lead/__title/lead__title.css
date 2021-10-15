@@ -20,3 +20,9 @@
     line-height: calc(12.5vw * (100 / 96));
   }
 }
+
+@media screen and (max-width: 320px) {
+  .lead__title {
+    line-height: 44px;
+  }
+}

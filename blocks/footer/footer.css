@@ -39,3 +39,9 @@
     margin-left: 5vw;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .footer {
+    padding-top: 64px;
+  }
+}

@@ -6,7 +6,3 @@
 .header__lang-link:hover {
   opacity: 0.8;
 }
-
-.header__lang-link:active {
-  border-bottom: 1px solid;
-}
